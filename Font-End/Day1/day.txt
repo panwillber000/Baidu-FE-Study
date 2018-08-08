@@ -1,0 +1,19 @@
+将 Visual Studio Code 与 Git 关联
+    
+    1 安装Git
+        1.1cmd中运行 git 确认成功
+    2 新建一个文件夹作为git仓库
+        2.1右键，点击 git bush here，运行命令 git remote add origin http://xxx.git
+            若报错not a git repository ( or ... 先运行 git init ，再运行上面的命令
+    3 在VS code中打开刚才的文件夹即可成功关联Git
+    4 右键，点击 git bush here，输入命令 $ ssh-keygen -t rsa -C “注册邮箱”
+    5 打开C:\Users\Administrator.ssh目录， id_rsa.pub 文件内容就是公钥
+    6 登陆GitHub，点击用户名头像,然后选择Settings进入下个页面
+    7 点击 SSH and GPG keys，选择 New SSH key
+    8 将C:\Users\Administrator\.ssh\id_rsa.pub文件中的内容（公钥）填入key栏
+    9 点击 Add SSH key 创建成功
+    10 测试ssh key是否成功，使用命令 ssh -T git@github.com，如果出现You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github
+    11 配置本地信息
+        git config –global user.name ‘账号名’ 
+        git config –global user.email 邮箱 
+        git config –list 查看配置结果

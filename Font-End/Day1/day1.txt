@@ -1,4 +1,4 @@
-将 Visual Studio Code 与 Git 关联
+配置 Visual Studio Code 与 Git
     
     1 安装Git
         1.1cmd中运行 git 确认成功

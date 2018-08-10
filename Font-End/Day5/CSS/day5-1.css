@@ -1,0 +1,32 @@
+/* 初始化 */
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* 布局样式 */
+section {
+    margin: 20px 0 0 0;
+}
+section div div {
+    margin: 10px 0 0 0;
+}
+section.basic-info div div,
+section.contect-info div div {
+    display: inline-block;
+    margin-right: 20px;
+}
+section.basic-info div div p,
+section.contect-info div div p {
+    display: inline;
+    margin-right: 5px;
+}
+
+/* 字体 */
+section div p:first-child {
+    font-weight: bold;
+}
